@@ -4,7 +4,8 @@
     "features": {
         "ghcr.io/devcontainers/features/node" : {
             "version": "16"
-        }
+        },
+        "ghcr.io/devcontainers/features/docker-from-docker:1": {}
     },
     "postCreateCommand": "chmod +x ./scripts/setup.sh && ./scripts/setup.sh && dotnet restore && npm install --prefix src/Client",
     "customizations": {
