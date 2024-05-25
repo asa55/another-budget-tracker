@@ -2,7 +2,7 @@
     "name": "Another Budget App",
     "image": "mcr.microsoft.com/vscode/devcontainers/dotnet:6.0",
     "features": {
-        "ghcr.io/devcontainers/features/node" : {
+        "ghcr.io/devcontainers/features/node:1" : {
             "version": "16"
         },
         "ghcr.io/devcontainers/features/docker-from-docker:1": {}
