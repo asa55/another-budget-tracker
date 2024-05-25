@@ -11,6 +11,7 @@
     "customizations": {
         "vscode": {
             "extensions": [
+                "ms-azuretools.vscode-dapr",
                 "ms-dotnettools.csharp",
                 "GitHub.copilot"
             ]
