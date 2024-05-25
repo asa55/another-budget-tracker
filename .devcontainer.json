@@ -6,7 +6,7 @@
             "version": "16"
         }
     },
-    "postCreateCommand": "chmod +x ./scripts/setup.sh && ./scripts/setup.sh dotnet restore && npm install --prefix src/Client",
+    "postCreateCommand": "chmod +x ./scripts/setup.sh && ./scripts/setup.sh && dotnet restore && npm install --prefix src/Client",
     "customizations": {
         "vscode": {
             "extensions": [
