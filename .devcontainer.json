@@ -1,0 +1,19 @@
+{
+    "name": "Another Budget App",
+    "image": "mcr.microsoft.com/vscode/devcontainers/dotnet:7.0",
+    "features": {
+        "ghcr.io/devcontainers/features/node" : {
+            "version": "16"
+        }
+    },
+    "postCreateCommand": "chmod +x ./scripts/setup.sh && ./scripts/setup.sh dotnet restore && npm install --prefix src/Client",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-dotnettools.csharp",
+                "dbaeumer.vscode-eslint",
+                "GitHub.copilot"
+            ]
+        }
+    }
+}
