@@ -41,9 +41,9 @@ check_and_create "src/Server" "webapi" "ASP.NET Core Web API"
 
 # Add necessary packages to Server project
 if [ -d "src/Server" ] && [ -n "$(ls -A src/Server)" ]; then
-  echo "Adding packages to Server project..."
-  dotnet add src/Server package Dapr.Client
-  dotnet add src/Server package Dapr.AspNetCore
+  echo "Adding EF Core packages to Server project..."
+  dotnet add package Microsoft.EntityFrameworkCore
+  dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 fi
 
 # Check and create Shared project
