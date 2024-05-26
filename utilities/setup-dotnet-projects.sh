@@ -1,15 +1,11 @@
 #!/bin/sh
 
 : '
-TLDR: This script will only run once on initial project creation, then will not run again.
-      The alternative was documenting the steps in a README file,
-      but I thought that might distract the readers from the main goal of the project.
+TLDR: This only needs to run once. It's idempotent so it won't hurt to run again,
+      but if you're reading this you won't need to worry about anything here.
+      My goal is to keep unnecessary info out of the README.
 
----
-
-This script is used to set up a new .NET project in a specified directory. 
-
-It defines a function, check_and_create, which takes three arguments:
+This utility defines a function, check_and_create, which takes three arguments:
 - dir: The directory where the project should be created.
 - template: The .NET template to use for the new project.
 - proj_name: The name of the project.
@@ -19,7 +15,7 @@ it creates a new project in the directory using the specified .NET template. If 
 and is not empty, it prints a message saying that the project already exists.
 
 Usage:
-./setup.sh [directory] [template] [project_name]
+./setup-dotnet-projects.sh
 '
 
 # If a specified directory doesn't exist or is empty, create a new project in that directory.
